@@ -7,8 +7,19 @@ const PortfolioItem = ({ item }) => {
   return (
     <>
       <Col xl={3} lg={4} md={6} sm={6} className="mb-5">
-        <figure className="effect-ming tm-video-item">
-          <Image src={item.image} alt={item.title} className="img-fluid" />
+        <figure
+          className="effect-ming tm-video-item"
+          onClick={() => {
+            const img = document.getElementById(item.slug);
+            img.style.display = "none";
+          }}
+        >
+          <Image
+            id={item.slug}
+            src={item.image}
+            alt={item.title}
+            className="img-fluid"
+          />
           <figcaption className="d-flex flex-column align-items-center justify-content-center">
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
