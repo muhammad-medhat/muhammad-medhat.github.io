@@ -4,7 +4,7 @@ import "./App.css";
 import { Card, Row, Col, Image, ListGroup, Form } from "react-bootstrap";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomeScreen from "./home.js";
-import PortfolioItemDetails from "./portfolioItem-details";
+// import PortfolioItemDetails from "./portfolioItem-details";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" exact element={<HomeScreen />} />
-          <Route path="/:name" exact element={<PortfolioItemDetails />} />
+          {/* <Route path="/:name" exact element={<PortfolioItemDetails />} /> */}
         </Routes>
       </BrowserRouter>
       {/* <!-- row --> */}

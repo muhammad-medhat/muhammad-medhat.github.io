@@ -6,7 +6,7 @@ const PortfolioItemDetails = () => {
   const { name } = useParams();
   // console.log(`name is ${name}`);
   const item = d.find((i) => i.slug == name);
-  // console.log("portfolioItem", item);
+  console.log("portfolioItem", item);
 
   return (
     <>

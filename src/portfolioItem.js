@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Col, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import PortfolioItemDetails from "./portfolioItem-details";
+// import PortfolioItemDetails from "./portfolioItem-details";
 const PortfolioItem = ({ item }) => {
   // console.log("portfolioItem", item);
   return (
@@ -11,7 +11,7 @@ const PortfolioItem = ({ item }) => {
           className="effect-ming tm-video-item"
           onClick={() => {
             const img = document.getElementById(item.slug);
-            img.style.display = "none";
+            // img.style.display = "none";
           }}
         >
           <Image
