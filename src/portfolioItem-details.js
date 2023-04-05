@@ -4,9 +4,9 @@ import { useParams } from "react-router-dom";
 import d from "./data";
 const PortfolioItemDetails = () => {
   const { name } = useParams();
-  console.log(`name is ${name}`);
+  // console.log(`name is ${name}`);
   const item = d.find((i) => i.slug == name);
-  console.log("portfolioItem", item);
+  // console.log("portfolioItem", item);
 
   return (
     <>
